@@ -1,34 +1,40 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Cart from "./Cart";
-import Contact from "./Contact";
-import About from "./Pages/About";
-import Home from "./Pages/Home";
-
-import Products from "./Pages/Products";
-import SingleProduct from "./SingleProduct";
-
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import About from "./About";
+import Home from "./Home";
+// import Products from "./Products";
+// import Contact from "./Contact";
+// import Cart from "./Cart";
+// import SingleProduct from "./SingleProduct";
+// import ErrorPage from "./ErrorPage";
+import { GlobalStyle } from "./GlobalStyle";
+import { ThemeProvider } from "styled-components";
+// import Header from "./components/Header";
+// import Footer from "./components/Footer";
 
 const App = () => {
-  return (
-    <>
-      <Router>
-        <Routes>
-           <Route path="/" element={<Home/>} />
-           <Route path="/about" element={<About/>} />
-           <Route path="/contact" element={<Contact/>} />
-           <Route path="/product" element={<Products/>} />
-           <Route path="/singleproduct/:id" element={<SingleProduct/>} />
-           <Route path="/cart" element={<Cart/>} />
-        </Routes>
-        
+  const theme = {
+    colors: {
+      bg: "green",
+    }
+  };
 
+  return (
+    <ThemeProvider theme={theme}>
+      <Router>
+        <GlobalStyle />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          {/* <Route path="/products" element={<Products />} /> */}
+          {/* <Route path="/contact" element={<Contact />} /> */}
+          {/* <Route path="/singleproduct/:id" element={<SingleProduct />} /> */}
+          {/* <Route path="/cart" element={<Cart />} /> */}
+          {/* <Route path="*" element={<ErrorPage />} /> */}
+        </Routes>
       </Router>
-    
-    </>
-  )
-  
+    </ThemeProvider>
+  );
 };
 
 export default App;

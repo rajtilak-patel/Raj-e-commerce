@@ -157,6 +157,7 @@ input, textarea{
     cursor: pointer;
     }
 
+    ${"" /* resuable code section  
 @media (max-width: ${({ theme }) => theme.media.tab}) {
     .container {
     max-width: 130rem;
@@ -168,7 +169,7 @@ input, textarea{
        html {
       font-size: 50%;
     }
-
+*/}git
 .grid{
   gap: 3.2rem;
 }

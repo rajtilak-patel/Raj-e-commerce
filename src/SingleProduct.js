@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
+const SingleProduct =()=>{
 
+  return <Wrapper></Wrapper>;
+}
 
 const Wrapper = styled.section`
   .container {
@@ -73,12 +76,6 @@ const Wrapper = styled.section`
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     padding: 0 2.4rem;
   }
-  
 `;
-const SingleProduct =()=>{
-    return <Wrapper></Wrapper>;
-}
 
 export default SingleProduct;
-
-
