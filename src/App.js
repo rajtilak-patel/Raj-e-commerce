@@ -9,6 +9,7 @@ import Home from "./Home";
 // import ErrorPage from "./ErrorPage";
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
+import About from "./About";
 // import Header from "./components/Header";
 // import Footer from "./components/Footer";
 
