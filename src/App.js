@@ -10,13 +10,14 @@ import ErrorPage from "./ErrorPage";
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
 import About from "./About";
+import Header from "./components/Header";
 // import Header from "./components/Header";
 // import Footer from "./components/Footer";
 
 const App = () => {
   const theme = {
     colors: {
-      bg: "green",
+      bg: "#fff",
     }
   };
 
@@ -24,6 +25,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Router>
         <GlobalStyle />
+        <Header/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
