@@ -58,7 +58,7 @@ const Nav = () => {
         width: 2.4rem;
         height: 2.4rem;
         position: absolute;
-        background-color: #000;
+        background-color: lightblue;
         color: #000;
         border-radius: 50%;
         display: grid;
